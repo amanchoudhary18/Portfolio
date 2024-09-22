@@ -1,5 +1,119 @@
-@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap");
 
-.happy-monkey {
-  font-family: "Happy Monkey";
+.main {
+  min-height: 100vh;
+  height: max-content;
+}
+
+.font-poppins {
+  font-family: "Poppins";
+}
+
+.font-montagu {
+  font-family: "Montagu Slab";
+}
+
+/* Map Styles */
+a.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
+
+.mapboxgl-map {
+  border-radius: 1rem;
+}
+
+/* Shadow Styles */
+
+.bento-dark-shadow {
+  box-shadow: inset 0px 0px 0px 2px rgb(30, 36, 42);
+}
+
+.dark-shadow {
+  box-shadow: 0px 0px 0px 2px rgb(30, 36, 42);
+}
+
+.dark-shadow:hover {
+  box-shadow: 0px 0px 0px 4px rgb(30, 36, 42);
+}
+
+.light-shadow {
+  box-shadow: 0px 0px 0px 1px rgb(218, 235, 253, 0.5);
+}
+
+.light-shadow:hover {
+  box-shadow: 0px 0px 0px 4px rgb(218, 235, 253, 0.5);
+}
+
+/* Playing animation */
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.line {
+  width: 3px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.middle-line {
+  width: 3px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+@keyframes bounce {
+  0% {
+    height: 15px;
+  }
+  50% {
+    height: 25px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+.animate {
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+.animate2 {
+  animation: bounce 0.6s ease-in-out infinite;
+}
+
+.animate3 {
+  animation: bounce 0.7s ease-in-out infinite;
+}
+
+/* Bento Container */
+.bento-container {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 200px;
+}
+
+@media (min-width: 480px) {
+  .bento-container {
+    grid-auto-rows: 200px;
+  }
+}
+
+@media (min-width: 640px) {
+  .bento-container {
+    grid-auto-rows: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bento-container {
+    grid-auto-rows: minmax(250px, auto);
+  }
 }
